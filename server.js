@@ -28,7 +28,7 @@ io.on("connection", (socket) => {
     socket.join(p_user.room);
 
     //display a welcome message to the user who have joined a room
-    socket.emit("message", {
+    socket.emit("welcome message", {
       userId: p_user.id,
       username: p_user.username,
       text: `Welcome ${p_user.username}`,
